@@ -4,8 +4,8 @@ stages:
     cmd: python scripts/create_dataset.py
     deps:
     - path: scripts/create_dataset.py
-      md5: c67e9648e62ea83f5647c553f9ce6fcc
-      size: 1070
+      md5: 7c857e28398779e05f6fd8233b632db3
+      size: 987
     outs:
     - path: assets/data
       md5: 2a17add89498e77d820bcdbc802d6626.dir
