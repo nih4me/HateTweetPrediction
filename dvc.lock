@@ -38,12 +38,12 @@ stages:
       md5: e0cf957dd431de5b25d37be3815a8a85
       size: 51144
     - path: scripts/train_model.py
-      md5: 24a14ae496cbd1ee0e1495a465939def
-      size: 591
+      md5: 06b6d607b6e2031b0e81c2018d48e2dc
+      size: 622
     outs:
     - path: assets/models
-      md5: 597b24fb0cf7b9a21085564271d35291.dir
-      size: 7643
+      md5: ff9088f9666162f1effeb174ec0cfc9a.dir
+      size: 31769609
       nfiles: 1
   eval-model:
     cmd: python scripts/eval_model.py
@@ -55,9 +55,9 @@ stages:
       md5: ec56798768b9555288103108f8e264b8
       size: 12792
     - path: scripts/eval_model.py
-      md5: 38cefa22017a3ad2c40cc5ded5591c8e
-      size: 619
+      md5: 4a43e81aee31a199efbc07eb632165ab
+      size: 725
     outs:
     - path: assets/metrics.json
-      md5: 77f6e29978da607751382223c9dabe72
-      size: 32
+      md5: f84a39c7968cf7b3304bd8578920eca8
+      size: 65
