@@ -1,2 +1,5 @@
 [core]
     autostage = true
+    remote = remote
+['remote "remote"']
+    url = /Users/abdoulkader.kabore/Downloads/MachineLearning/Tutos/HateTweetRemoteFolder

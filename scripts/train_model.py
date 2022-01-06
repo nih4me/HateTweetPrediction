@@ -1,7 +1,7 @@
 import pickle # Serialiser des objets (y comporis des modeles) joblib
 
 import pandas as pd
-from sklearn.svm import LinearSVC
+from sklearn.tree import DecisionTreeClassifier
 
 from config import Config
 
@@ -11,7 +11,7 @@ X_train = pd.read_csv(str(Config.FEATURES_PATH / "train_features.csv"))
 y_train = pd.read_csv(str(Config.FEATURES_PATH / "train_labels.csv"))
 
 # Entrainement du model
-model = LinearSVC()
+model = DecisionTreeClassifier()
 model.fit(X_train, y_train.to_numpy().ravel()) # e.g. array([[1], [0]]).ravel() = array([1, 0])
 
 # Enregisrement du model
